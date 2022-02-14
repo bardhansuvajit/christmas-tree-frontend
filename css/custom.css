@@ -1,0 +1,160 @@
+/*
+-- Root
+-- Homepage
+*/
+
+/* Root */
+:root {
+    --accent-color: #800080;
+    --accent-color-hover: #b920b9;
+    --accent-color-opacity: #80008052;
+    --accent-color-matching-text: #fff;
+
+    --secondary-color: #18a91e;
+    --secondary-color-matching-text: #fff;
+}
+
+.btn-accent {
+    color: var(--accent-color-matching-text);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+.btn-accent:hover {
+    color: var(--accent-color-matching-text);
+    background-color: var(--accent-color-hover);
+    border-color: var(--accent-color-hover);
+}
+.btn-accent:focus {
+    box-shadow: 0 0 0 0.2rem var(--accent-color-opacity);
+}
+.badge-accent-secondary {
+    color: var(--secondary-color-matching-text);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+a, .text-accent {
+    color: var(--accent-color);
+}
+a:hover {
+    color: var(--accent-color-hover);
+}
+
+
+/* Homepage */
+.line {
+    margin: 0 0 20px;
+}
+.dropdown-cart-top-header {
+    min-height: 75px;
+}
+.carrnival-category-item:hover {
+    border: 1px solid var(--accent-color);
+}
+.carrnival-category-item h6 {
+    color: var(--secondary-color);
+}
+.carrnival-category-item {
+    width: 95%;
+    display: inline-block;
+}
+.tea-tourism-packages-list .products-box .card img {
+    height: 200px;
+}
+.tea-tourism-packages-list .products-box a {
+    display: block;
+}
+.tea-tourism-packages-list .products-box a.btn {
+    display: inline-block;
+}
+.tea-tourism-packages-list .products-box a img {
+    width: 100%;
+    height: 200px;
+}
+.book-now-pay-later-list {
+    padding: 15px;
+}
+.book-now-pay-later-list .homepage-add-section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.best-packages-single {
+    height: 400px;
+    display: block;
+}
+.best-packages-single .list-card {
+    height: 290px;
+    overflow: hidden;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    transition: all 0.3s ease;
+}
+.best-packages-single:hover > .list-card {
+    height: 400px;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+}
+.best-packages-single a {
+    color: #252424;
+}
+.best-packages-single .display-on-hover {
+    border-top: 1px solid #f1f1f1;
+    padding-top: 1rem;
+}
+.best-packages-single .mrp {
+    text-decoration: line-through;
+    margin-top: 2px;
+}
+.best-packages-single .social-media-share a {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+/* responsive only */
+@media only screen and (max-width: 640px) {
+    h2 {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 13px;
+    }
+    p {
+        font-size: 12px;
+        line-height: 13px;
+        margin-bottom: 0.5rem;
+    }
+    a, a.btn {
+        font-size: 12px;
+    }
+    .p-4 {
+        padding: 15px !important;
+    }
+
+    .card {
+        overflow: hidden;
+        text-align: center;
+    }
+    .card-title {
+        margin-bottom: 0.5rem;
+    }
+    .card-img-overlay {
+        padding: 0.5rem;
+    }
+    .homepage-add-section {
+        padding: 0;
+    }
+    .tea-tourism-packages-list .col-md-6 {
+        padding: 0;
+    }
+    .tea-tourism-packages-list .products-box a.btn {
+        display: inline-block;
+    }
+    .book-now-pay-later-list {
+        padding-top: 0;
+    }
+    .book-now-pay-later-list .homepage-add-section {
+        padding-top: 0;
+    }
+    .best-packages-single .list-card {
+        height: 400px;
+    }
+}
