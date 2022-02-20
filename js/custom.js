@@ -180,7 +180,13 @@ var fiveobjowlcarousel = $(".owl-carousel-five");
     });
 }
 
-// Tooltip
+  // Tooltip
   $('[data-toggle="tooltip"]').tooltip();
 
 })(jQuery); // End of use strict
+
+// show filter on mobile device
+function displayFilter() {
+  $('.packages-filter').toggle();
+  // alert('here');
+}

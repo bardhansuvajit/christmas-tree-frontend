@@ -1,6 +1,8 @@
 /*
 -- Root
 -- Homepage
+-- Packages
+-- Single destination
 */
 
 /* Root */
@@ -11,6 +13,8 @@
     --accent-color-matching-text: #fff;
 
     --secondary-color: #18a91e;
+    --secondary-color-hover: #8BC34A;
+    --secondary-color-opacity: #18a91e73;
     --secondary-color-matching-text: #fff;
 }
 
@@ -27,6 +31,15 @@
 .btn-accent:focus {
     box-shadow: 0 0 0 0.2rem var(--accent-color-opacity);
 }
+.btn-success, .badge-success {
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+}
+.btn-success:hover {
+    color: var(--secondary-color-matching-text) !important;
+    background-color: var(--secondary-color-hover) !important;
+    border-color: var(--secondary-color-hover) !important;
+}
 .badge-accent-secondary {
     color: var(--secondary-color-matching-text);
     background-color: var(--secondary-color);
@@ -35,9 +48,29 @@
 a, .text-accent {
     color: var(--accent-color);
 }
-a:hover {
+.btn-link {
+    color: var(--secondary-color);
+}
+a:hover, .btn-link:hover {
     color: var(--accent-color-hover);
 }
+.custom-control-input:checked~.custom-control-label::before {
+    color: var(--accent-color-matching-text);
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+}
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    border-color: var(--accent-color-opacity);
+}
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem var(--accent-color-opacity);
+}
+.custom-control-input:not(:disabled):active~.custom-control-label::before {
+    color: var(--accent-color-matching-text);
+    border-color: var(--accent-color-opacity);
+    background-color: var(--accent-color-opacity);
+}
+
 
 
 /* Homepage */
@@ -80,12 +113,18 @@ a:hover {
 .best-packages-single {
     height: 400px;
     display: block;
+    position: relative;
+    z-index: 0;
+    transition: all 0.3s ease;
 }
 .best-packages-single .list-card {
     height: 290px;
     overflow: hidden;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
     transition: all 0.3s ease;
+}
+.best-packages-single:hover {
+    z-index: 99;
 }
 .best-packages-single:hover > .list-card {
     height: 400px;
@@ -108,6 +147,201 @@ a:hover {
     border-radius: 50%;
     padding: 6px;
 }
+
+/* Packages */
+.best-packages-single.packages-page {
+    height: 290px;
+}
+/* Functional styling;
+* These styles are required for noUiSlider to function.
+* You don't need to change these rules to apply your design.
+*/
+.noUi-target,
+.noUi-target * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -ms-touch-action: none;
+    touch-action: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.noUi-target {
+    position: relative;
+    direction: ltr;
+}
+
+.noUi-base {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    /* Fix 401 */
+}
+
+.noUi-origin {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.noUi-handle {
+    position: relative;
+    z-index: 1;
+}
+
+.noUi-stacking .noUi-handle {
+    /* This class is applied to the lower origin when
+    its values is > 50%. */
+    z-index: 10;
+}
+
+.noUi-state-tap .noUi-origin {
+    -webkit-transition: left 0.3s, top .3s;
+    transition: left 0.3s, top .3s;
+}
+
+.noUi-state-drag * {
+    cursor: inherit !important;
+}
+
+/* Painting and performance;
+* Browsers can paint handles in their own layer.
+*/
+.noUi-base,
+.noUi-handle {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* Slider size and handle placement;
+*/
+.noUi-horizontal {
+    height: 4px;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    left: -7px;
+    top: -7px;
+    background-color: var(--secondary-color);
+}
+
+/* Styling;
+*/
+.noUi-background {
+    background: #D6D7D9;
+}
+
+.noUi-connect {
+    background: var(--secondary-color);
+    -webkit-transition: background 450ms;
+    transition: background 450ms;
+}
+
+.noUi-origin {
+    border-radius: 2px;
+}
+
+.noUi-target {
+    border-radius: 2px;
+}
+
+/* Handles and cursors;
+*/
+.noUi-draggable {
+    cursor: w-resize;
+}
+
+.noUi-vertical .noUi-draggable {
+    cursor: n-resize;
+}
+
+.noUi-handle {
+    cursor: default;
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+}
+
+.noUi-handle:active {
+    border: 8px solid var(--secondary-color);
+    border: 8px solid var(--secondary-color-opacity);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    left: -14px;
+    top: -14px;
+}
+
+/* Disabled state;
+*/
+[disabled].noUi-connect,
+[disabled] .noUi-connect {
+    background: #B8B8B8;
+}
+
+[disabled].noUi-origin,
+[disabled] .noUi-handle {
+    cursor: not-allowed;
+}
+
+.apply-filter-holder {
+    position: sticky;
+    bottom: 0;
+    border-top: 1px solid #f1f1f1;
+    z-index: 1;
+}
+.display-mobile-only {
+    display: none;
+}
+.display-desktop-only {
+    display: inline-block;
+}
+.packages-filter {
+    position: static;
+    z-index: 0;
+    height: 100%;
+    overflow: initial;
+    background-color: #f3f7f8;
+}
+.packages-card-body {
+    position: relative;
+    padding: 1rem;
+}
+
+/* Single destination */
+.restaurant-detailed-banner .img-fluid.cover {
+    height: 200px;
+}
+.restaurant-detailed-header-right .btn-success {
+    border-radius: 3px;
+    height: auto;
+    margin: 0px 0 18px;
+    min-width: auto;
+    padding: 0.25rem 0.5rem;
+}
+.mall-category-item small {
+    color: var(--accent-color);
+}
+.mall-category-item:hover small {
+    background: var(--accent-color);
+    color: var(--accent-color-matching-text);
+}
+.destination-sidebar {
+    position: sticky;
+    top: 0;
+}
+
+
+
+
 
 /* responsive only */
 @media only screen and (max-width: 640px) {
@@ -156,5 +390,29 @@ a:hover {
     }
     .best-packages-single .list-card {
         height: 400px;
+    }
+    .display-mobile-only {
+        display: inline-block;
+    }
+    .display-desktop-only {
+        display: none;
+    }
+    .packages-filter {
+        position: fixed;
+        z-index: 999;
+        height: 465px;
+        overflow: scroll;
+    }
+    .custom-margin {
+        margin: 0;
+    }
+    .best-packages-single.packages-page > .list-card {
+        height: 290px;
+    }
+    .packages-card-body {
+        padding: 0.25rem 0.5rem;
+    }
+    .packages-card-body .list-card-body p.subhead {
+        font-size: 10px;
     }
 }
