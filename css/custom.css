@@ -320,7 +320,7 @@ a:hover, .btn-link:hover {
 .restaurant-detailed-banner .img-fluid.cover {
     height: 200px;
 }
-.restaurant-detailed-header-right .btn-success {
+.restaurant-detailed-header-right .btn-success, .restaurant-detailed-header-right .btn-accent {
     border-radius: 3px;
     height: auto;
     margin: 0px 0 18px;
@@ -337,6 +337,35 @@ a:hover, .btn-link:hover {
 .destination-sidebar {
     position: sticky;
     top: 0;
+}
+.best-packages-single.hotels-page {
+    height: 290px;
+}
+.best-packages-single.hotels-page .display-on-hover {
+    border-top: 0;
+    padding-top: 0;
+}
+.best-packages-single.hotels-page .list-card {
+    height: 270px;
+}
+.best-packages-single.hotels-page .features i {
+    font-size: 30px;
+}
+.best-packages-single.hotels-page:hover > .list-card {
+    height: 310px;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+}
+.amenities i {
+    font-size: 40px;
+    margin-right: 10px;
+    display: block;
+}
+.generator-bg {
+    background: var(--accent-color);
+    background: -moz-linear-gradient(-45deg, var(--accent-color) 1%, #fe792b 100%);
+    background: -webkit-linear-gradient(-45deg, var(--accent-color) 1%,#fe792b 100%);
+    background: linear-gradient(135deg, var(--accent-color) 1%, var(--accent-color-2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--accent-color)', endColorstr='#fe792b',GradientType=1 );
 }
 
 
@@ -362,7 +391,6 @@ a:hover, .btn-link:hover {
     .p-4 {
         padding: 15px !important;
     }
-
     .card {
         overflow: hidden;
         text-align: center;
@@ -375,6 +403,9 @@ a:hover, .btn-link:hover {
     }
     .homepage-add-section {
         padding: 0;
+    }
+    .app {
+        margin-top: 25px;
     }
     .tea-tourism-packages-list .col-md-6 {
         padding: 0;
@@ -414,5 +445,21 @@ a:hover, .btn-link:hover {
     }
     .packages-card-body .list-card-body p.subhead {
         font-size: 10px;
+    }
+    .best-packages-single.hotels-page {
+        height: 220px;
+    }
+    .best-packages-single.hotels-page .list-card {
+        height: 235px;
+    }
+    .best-packages-single.hotels-page .features i {
+        font-size: 18px;
+        margin-right: 2px;
+    }
+    .restaurant-detailed-banner .img-fluid.cover {
+        height: 400px;
+    }
+    .restaurant-detailed-header-left {
+        margin-bottom: 20px;
     }
 }
