@@ -367,6 +367,11 @@ a:hover, .btn-link:hover {
     background: linear-gradient(135deg, var(--accent-color) 1%, var(--accent-color-2) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--accent-color)', endColorstr='#fe792b',GradientType=1 );
 }
+/* blogs */
+.order-list img.mr-4 {
+    width: auto;
+    height: 120px;
+}
 
 
 
