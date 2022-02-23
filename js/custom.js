@@ -37,16 +37,16 @@ $('.nav-tabs a').on('shown', function (e) {
     objowlcarousel.owlCarousel({
       responsive: {
         0:{
-            items:3,
+            items:2,
         },
         600:{
-            items:4,
+            items:2,
         },
         1000: {
-          items: 6,
+          items: 4,
         },
         1200: {
-          items: 8,
+          items: 4,
         },
       },
       loop: true,
