@@ -60,6 +60,36 @@ $('.nav-tabs a').on('shown', function (e) {
       navText:["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
     });
   }
+
+  // homepage activities
+  const actowlcarousel = $('.owl-carousel-activities');
+  if (actowlcarousel.length > 0) {
+    actowlcarousel.owlCarousel({
+      responsive: {
+        0:{
+            items:2,
+        },
+        600:{
+            items:2,
+        },
+        1000: {
+          items: 4,
+        },
+        1200: {
+          items: 5,
+        },
+      },
+      loop: true,
+      lazyLoad: true,
+      autoplay: true,
+      dots: false,
+      autoplaySpeed: 1000,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      nav: true,
+      navText:["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+    });
+  }
   
 // Homepage Owl Carousel  
 var fiveobjowlcarousel = $(".owl-carousel-four");
