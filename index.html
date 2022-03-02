@@ -17,6 +17,8 @@
       <link href="vendor/select2/css/select2.min.css" rel="stylesheet">
       <!-- Default css. DO NOT TOUCH !! -->
       <link href="css/style.css" rel="stylesheet">
+      <!-- animate css -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
       <!-- Enter custom css here -->
       <link href="css/custom.css" rel="stylesheet">
       <link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.css">
@@ -124,7 +126,11 @@
             <div class="container">
                <div class="row d-flex align-items-center">
                   <div class="col-md-8">
-                     <div class="carrnival-slider pl-4 pt-3">
+                     <div class="homepage-search-title">
+                        <h1 class="mb-2 font-weight-normal"><span class="font-weight-bold">Find Awesome Deals</span> with us</h1>
+                        <h5 class="mb-5 text-secondary font-weight-normal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut optio soluta quo, voluptatum nostrum!</h5>
+                     </div>
+                     <!-- <div class="carrnival-slider pl-4 pt-3">
                         <div class="owl-carousel homepage-dest owl-theme">
                            <div class="item">
                               <div class="slide-holder">
@@ -157,7 +163,7 @@
                               </div>
                            </div>
                         </div>
-                     </div>
+                     </div> -->
 
                      <!-- <p class="mt-4 text-shadow font-weight-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quisquam dolore reiciendis animi, necessitatibus quasi doloremque obcaecati quo expedita ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sapiente modi et eos? Aspernatur officiis eos placeat voluptatibus repudiandae vero.</p> -->
 
@@ -203,6 +209,45 @@
                            </div>
                         </div> -->
                      </div>
+
+                     <div class="homepage-search-form">
+                        <form class="form-noborder">
+                           <div class="form-row justify-content-center mt-3">
+                              <div class="col-md-4 col-6 form-group">
+                                 <div class="location-dropdown">
+                                    <i class="icofont-location-arrow"></i>
+                                    <select class="custom-select form-control-lg">
+                                       <option value="" disabled selected> Destination </option>
+                                       <option value="andaman"> Andaman </option>
+                                       <option value="assam-meghalaya"> Assam-meghalaya </option>
+                                       <option value="arunachal"> Arunachal </option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-4 col-6 form-group">
+                                 <div class="location-dropdown">
+                                    <i class="icofont-location-arrow"></i>
+                                    <select class="custom-select form-control-lg">
+                                       <option value="" disabled selected> Nights </option>
+                                       <option value="2"> 2 </option>
+                                       <option value="3"> 3 </option>
+                                       <option value="4"> 4 </option>
+                                       <option value="5"> 5 </option>
+                                       <option value="6"> 6 </option>
+                                       <option value="7"> 7 </option>
+                                       <option value="8"> 8 </option>
+                                       <option value="9"> 9 </option>
+                                       <option value="10"> 10 </option>
+                                       <option value="10+"> 10+ </option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-4 col-sm-12 form-group">
+                                 <button type="submit" class="btn btn-accent btn-block btn-lg btn-gradient">Search</button>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
                   </div>
                   <div class="col-md-4">
                      <div class="carrnival-slider pl-4 pt-3">
@@ -227,7 +272,7 @@
          </section>
 
          <!-- search destinations -->
-         <div class="container">
+         <!-- <div class="container">
             <div class="homepage-search-form">
                <form class="form-noborder">
                   <div class="form-row justify-content-center mt-3">
@@ -266,7 +311,7 @@
                   </div>
                </form>
             </div>
-         </div>
+         </div> -->
 
          <!-- spotlight packages -->
          <section class="spotlight-packages-list bg-white p-4">
@@ -274,7 +319,13 @@
             <section class="section pt-3 pb-3 homepage-add-section">
                <div class="container">
                   <div class="section-header text-center">
-                     <h2>Spotlight packages in Andaman</h2>
+                     <div class="d-flex justify-content-center">
+                        <div class="heading-circle animate__animated animate__bounce animate__infinite">
+                           <p>33</p>
+                           <i class="icofont-sale-discount"></i>
+                        </div>
+                        <h2 class="text-uppercase">Spotlight packages in Andaman</h2>
+                     </div>
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iure similique nihil incidunt, recusandae adipisci voluptate praesentium accusantium tempore, quae optio, delectus totam? Tempora eligendi incidunt rem corporis itaque error placeat doloremque soluta ullam ex? Possimus, facilis nobis. Eius repellendus sint consequuntur aliquid omnis commodi! Possimus reprehenderit cupiditate molestiae nam?</p>
                      <span class="line"></span>
                   </div>
@@ -329,7 +380,7 @@
                                           <!-- title -->
                                           <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                           <!-- location -->
-                                          <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                          <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                           <!-- pricing -->
                                           <div class="d-flex justify-content-between mb-2">
                                              <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -353,11 +404,11 @@
                                                 </div>
                                              </div>
                                              <!-- share icons -->
-                                             <div class="social-media-share mt-3">
+                                             <!-- <div class="social-media-share mt-3">
                                                 <a href="#" target="_blank" class="badge badge-primary"><i class="fab fa-facebook-f text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-success"><i class="fab fa-whatsapp text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-danger"><i class="fab fa-pinterest text-light"></i></a>
-                                             </div>
+                                             </div> -->
                                           </div>
                                        </div>
                                     </div>
@@ -380,7 +431,7 @@
                                           <!-- title -->
                                           <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                           <!-- location -->
-                                          <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                          <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                           <!-- pricing -->
                                           <div class="d-flex justify-content-between mb-2">
                                              <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -404,11 +455,11 @@
                                                 </div>
                                              </div>
                                              <!-- share icons -->
-                                             <div class="social-media-share mt-3">
+                                             <!-- <div class="social-media-share mt-3">
                                                 <a href="#" target="_blank" class="badge badge-primary"><i class="fab fa-facebook-f text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-success"><i class="fab fa-whatsapp text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-danger"><i class="fab fa-pinterest text-light"></i></a>
-                                             </div>
+                                             </div> -->
                                           </div>
                                        </div>
                                     </div>
@@ -431,7 +482,7 @@
                                           <!-- title -->
                                           <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                           <!-- location -->
-                                          <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N)</p>
+                                          <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N)</p>
                                           <!-- pricing -->
                                           <div class="d-flex justify-content-between mb-2">
                                              <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -455,11 +506,11 @@
                                                 </div>
                                              </div>
                                              <!-- share icons -->
-                                             <div class="social-media-share mt-3">
+                                             <!-- <div class="social-media-share mt-3">
                                                 <a href="#" target="_blank" class="badge badge-primary"><i class="fab fa-facebook-f text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-success"><i class="fab fa-whatsapp text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-danger"><i class="fab fa-pinterest text-light"></i></a>
-                                             </div>
+                                             </div> -->
                                           </div>
                                        </div>
                                     </div>
@@ -482,7 +533,7 @@
                                           <!-- title -->
                                           <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                           <!-- location -->
-                                          <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                          <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                           <!-- pricing -->
                                           <div class="d-flex justify-content-between mb-2">
                                              <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -506,11 +557,11 @@
                                                 </div>
                                              </div>
                                              <!-- share icons -->
-                                             <div class="social-media-share mt-3">
+                                             <!-- <div class="social-media-share mt-3">
                                                 <a href="#" target="_blank" class="badge badge-primary"><i class="fab fa-facebook-f text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-success"><i class="fab fa-whatsapp text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-danger"><i class="fab fa-pinterest text-light"></i></a>
-                                             </div>
+                                             </div> -->
                                           </div>
                                        </div>
                                     </div>
@@ -533,7 +584,7 @@
                                           <!-- title -->
                                           <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                           <!-- location -->
-                                          <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                          <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                           <!-- pricing -->
                                           <div class="d-flex justify-content-between mb-2">
                                              <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -557,11 +608,11 @@
                                                 </div>
                                              </div>
                                              <!-- share icons -->
-                                             <div class="social-media-share mt-3">
+                                             <!-- <div class="social-media-share mt-3">
                                                 <a href="#" target="_blank" class="badge badge-primary"><i class="fab fa-facebook-f text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-success"><i class="fab fa-whatsapp text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-danger"><i class="fab fa-pinterest text-light"></i></a>
-                                             </div>
+                                             </div> -->
                                           </div>
                                        </div>
                                     </div>
@@ -633,7 +684,7 @@
                                           <!-- title -->
                                           <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                           <!-- location -->
-                                          <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                          <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                           <!-- pricing -->
                                           <div class="d-flex justify-content-between mb-2">
                                              <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -657,11 +708,11 @@
                                                 </div>
                                              </div>
                                              <!-- share icons -->
-                                             <div class="social-media-share mt-3">
+                                             <!-- <div class="social-media-share mt-3">
                                                 <a href="#" target="_blank" class="badge badge-primary"><i class="fab fa-facebook-f text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-success"><i class="fab fa-whatsapp text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-danger"><i class="fab fa-pinterest text-light"></i></a>
-                                             </div>
+                                             </div> -->
                                           </div>
                                        </div>
                                     </div>
@@ -684,7 +735,7 @@
                                           <!-- title -->
                                           <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                           <!-- location -->
-                                          <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                          <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                           <!-- pricing -->
                                           <div class="d-flex justify-content-between mb-2">
                                              <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -708,11 +759,11 @@
                                                 </div>
                                              </div>
                                              <!-- share icons -->
-                                             <div class="social-media-share mt-3">
+                                             <!-- <div class="social-media-share mt-3">
                                                 <a href="#" target="_blank" class="badge badge-primary"><i class="fab fa-facebook-f text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-success"><i class="fab fa-whatsapp text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-danger"><i class="fab fa-pinterest text-light"></i></a>
-                                             </div>
+                                             </div> -->
                                           </div>
                                        </div>
                                     </div>
@@ -735,7 +786,7 @@
                                           <!-- title -->
                                           <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                           <!-- location -->
-                                          <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N)</p>
+                                          <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N)</p>
                                           <!-- pricing -->
                                           <div class="d-flex justify-content-between mb-2">
                                              <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -759,11 +810,11 @@
                                                 </div>
                                              </div>
                                              <!-- share icons -->
-                                             <div class="social-media-share mt-3">
+                                             <!-- <div class="social-media-share mt-3">
                                                 <a href="#" target="_blank" class="badge badge-primary"><i class="fab fa-facebook-f text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-success"><i class="fab fa-whatsapp text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-danger"><i class="fab fa-pinterest text-light"></i></a>
-                                             </div>
+                                             </div> -->
                                           </div>
                                        </div>
                                     </div>
@@ -786,7 +837,7 @@
                                           <!-- title -->
                                           <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                           <!-- location -->
-                                          <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                          <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                           <!-- pricing -->
                                           <div class="d-flex justify-content-between mb-2">
                                              <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -810,11 +861,11 @@
                                                 </div>
                                              </div>
                                              <!-- share icons -->
-                                             <div class="social-media-share mt-3">
+                                             <!-- <div class="social-media-share mt-3">
                                                 <a href="#" target="_blank" class="badge badge-primary"><i class="fab fa-facebook-f text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-success"><i class="fab fa-whatsapp text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-danger"><i class="fab fa-pinterest text-light"></i></a>
-                                             </div>
+                                             </div> -->
                                           </div>
                                        </div>
                                     </div>
@@ -837,7 +888,7 @@
                                           <!-- title -->
                                           <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                           <!-- location -->
-                                          <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                          <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                           <!-- pricing -->
                                           <div class="d-flex justify-content-between mb-2">
                                              <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -861,11 +912,11 @@
                                                 </div>
                                              </div>
                                              <!-- share icons -->
-                                             <div class="social-media-share mt-3">
+                                             <!-- <div class="social-media-share mt-3">
                                                 <a href="#" target="_blank" class="badge badge-primary"><i class="fab fa-facebook-f text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-success"><i class="fab fa-whatsapp text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-danger"><i class="fab fa-pinterest text-light"></i></a>
-                                             </div>
+                                             </div> -->
                                           </div>
                                        </div>
                                     </div>
@@ -937,7 +988,7 @@
                                           <!-- title -->
                                           <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                           <!-- location -->
-                                          <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                          <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                           <!-- pricing -->
                                           <div class="d-flex justify-content-between mb-2">
                                              <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -961,11 +1012,11 @@
                                                 </div>
                                              </div>
                                              <!-- share icons -->
-                                             <div class="social-media-share mt-3">
+                                             <!-- <div class="social-media-share mt-3">
                                                 <a href="#" target="_blank" class="badge badge-primary"><i class="fab fa-facebook-f text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-success"><i class="fab fa-whatsapp text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-danger"><i class="fab fa-pinterest text-light"></i></a>
-                                             </div>
+                                             </div> -->
                                           </div>
                                        </div>
                                     </div>
@@ -988,7 +1039,7 @@
                                           <!-- title -->
                                           <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                           <!-- location -->
-                                          <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                          <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                           <!-- pricing -->
                                           <div class="d-flex justify-content-between mb-2">
                                              <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -1012,11 +1063,11 @@
                                                 </div>
                                              </div>
                                              <!-- share icons -->
-                                             <div class="social-media-share mt-3">
+                                             <!-- <div class="social-media-share mt-3">
                                                 <a href="#" target="_blank" class="badge badge-primary"><i class="fab fa-facebook-f text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-success"><i class="fab fa-whatsapp text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-danger"><i class="fab fa-pinterest text-light"></i></a>
-                                             </div>
+                                             </div> -->
                                           </div>
                                        </div>
                                     </div>
@@ -1039,7 +1090,7 @@
                                           <!-- title -->
                                           <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                           <!-- location -->
-                                          <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N)</p>
+                                          <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N)</p>
                                           <!-- pricing -->
                                           <div class="d-flex justify-content-between mb-2">
                                              <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -1063,11 +1114,11 @@
                                                 </div>
                                              </div>
                                              <!-- share icons -->
-                                             <div class="social-media-share mt-3">
+                                             <!-- <div class="social-media-share mt-3">
                                                 <a href="#" target="_blank" class="badge badge-primary"><i class="fab fa-facebook-f text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-success"><i class="fab fa-whatsapp text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-danger"><i class="fab fa-pinterest text-light"></i></a>
-                                             </div>
+                                             </div> -->
                                           </div>
                                        </div>
                                     </div>
@@ -1090,7 +1141,7 @@
                                           <!-- title -->
                                           <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                           <!-- location -->
-                                          <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                          <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                           <!-- pricing -->
                                           <div class="d-flex justify-content-between mb-2">
                                              <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -1114,11 +1165,11 @@
                                                 </div>
                                              </div>
                                              <!-- share icons -->
-                                             <div class="social-media-share mt-3">
+                                             <!-- <div class="social-media-share mt-3">
                                                 <a href="#" target="_blank" class="badge badge-primary"><i class="fab fa-facebook-f text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-success"><i class="fab fa-whatsapp text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-danger"><i class="fab fa-pinterest text-light"></i></a>
-                                             </div>
+                                             </div> -->
                                           </div>
                                        </div>
                                     </div>
@@ -1141,7 +1192,7 @@
                                           <!-- title -->
                                           <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                           <!-- location -->
-                                          <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                          <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                           <!-- pricing -->
                                           <div class="d-flex justify-content-between mb-2">
                                              <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -1165,11 +1216,11 @@
                                                 </div>
                                              </div>
                                              <!-- share icons -->
-                                             <div class="social-media-share mt-3">
+                                             <!-- <div class="social-media-share mt-3">
                                                 <a href="#" target="_blank" class="badge badge-primary"><i class="fab fa-facebook-f text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-success"><i class="fab fa-whatsapp text-light"></i></a>
                                                 <a href="#" target="_blank" class="badge badge-danger"><i class="fab fa-pinterest text-light"></i></a>
-                                             </div>
+                                             </div> -->
                                           </div>
                                        </div>
                                     </div>
@@ -1197,14 +1248,16 @@
                         <div class="col-md-3 col-6">
                            <div class="products-box">
                               <div class="card text-white border-accent-3">
-                                 <img src="img/pro2.jpg" class="card-img" alt="...">
+                                 <img src="img/products/love.jpg" class="card-img packages-image" alt="...">
                                  <div class="card-img-overlay">
-                                    <h5 class="card-title">Honeymoon packages</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum magnam reprehenderit rerum incidunt corporis!</p>
-                                    <p class="card-text text-accent">22% OFF</p>
+                                    <h5 class="card-title text-white">Honeymoon packages</h5>
+                                    <p class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum magnam reprehenderit rerum incidunt corporis!</p>
+                                    <p class="card-text text-white">22% OFF</p>
                                     <a href="#" class="btn btn-sm btn-accent"><i class="icofont-phone"></i> Call our experts now</a>
                                  </div>
                               </div>
+
+                              <div class="d-inline-block box-icon animate__animated animate__tada animate__infinite"><i class="icofont-heart-alt text-danger honeymoon-icon"></i></div>
                            </div>
                         </div>
                         <div class="col-md-3 col-6">
@@ -1249,14 +1302,16 @@
                         <div class="col-md-3 col-6">
                            <div class="products-box">
                               <div class="card text-white border-accent-3">
-                                 <img src="img/pro2.jpg" class="card-img" alt="...">
+                                 <img src="img/products/adventure.jpeg" class="card-img packages-image" alt="...">
                                  <div class="card-img-overlay">
-                                    <h5 class="card-title">Adventurous packages</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum magnam reprehenderit rerum incidunt corporis!</p>
-                                    <p class="card-text text-accent">22% OFF</p>
+                                    <h5 class="card-title text-white">Adventurous packages</h5>
+                                    <p class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum magnam reprehenderit rerum incidunt corporis!</p>
+                                    <p class="card-text text-white">22% OFF</p>
                                     <a href="#" class="btn btn-sm btn-accent"><i class="icofont-phone"></i> Call our experts now</a>
                                  </div>
                               </div>
+
+                              <div class="d-inline-block box-icon animate__animated animate__jello animate__infinite"><i class="icofont-fire text-danger honeymoon-icon"></i></div>
                            </div>
                         </div>
                      </div>
@@ -1271,14 +1326,16 @@
                         <div class="col-md-6 col-12">
                            <div class="products-box">
                               <div class="card text-white border-accent-3">
-                                 <img src="img/pro2.jpg" class="card-img" alt="...">
+                                 <img src="img/products/tea.jpg" class="card-img packages-image" alt="...">
                                  <div class="card-img-overlay">
-                                    <h5 class="card-title">Tea Tourism</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum magnam reprehenderit rerum incidunt corporis!</p>
-                                    <p class="card-text text-accent">22% OFF</p>
+                                    <h5 class="card-title text-white">Tea Tourism</h5>
+                                    <p class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum magnam reprehenderit rerum incidunt corporis!</p>
+                                    <p class="card-text text-white">22% OFF</p>
                                     <a href="#" class="btn btn-sm btn-accent"><i class="icofont-phone"></i> Call our experts now</a>
                                  </div>
                               </div>
+
+                              <div class="d-inline-block box-icon animate__animated animate__hinge animate__slower animate__infinite"><i class="icofont-tea-pot text-white honeymoon-icon"></i></div>
                            </div>
                         </div>
                         <div class="col-md-6 col-12">
@@ -1303,7 +1360,7 @@
                         <div class="col-md-6 col-12">
                            <div class="products-box">
                               <div class="card text-white border-accent-3">
-                                 <img src="img/pro2.jpg" class="card-img" alt="...">
+                                 <img src="img/products/cld.jpg" class="card-img packages-image" alt="...">
                                  <div class="card-img-overlay">
                                     <h5 class="card-title">Candle Light Dinner</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum magnam reprehenderit rerum incidunt corporis!</p>
@@ -1311,6 +1368,8 @@
                                     <a href="#" class="btn btn-sm btn-accent"><i class="icofont-phone"></i> Call our experts now</a>
                                  </div>
                               </div>
+
+                              <div class="d-inline-block box-icon animate__animated animate__flash animate__slower animate__infinite"><i class="icofont-lighter text-white honeymoon-icon"></i></div>
                            </div>
                         </div>
                      </div>
@@ -1325,10 +1384,10 @@
                         <div class="col-md-3 col-6">
                            <div class="products-box">
                               <div class="card text-white border-accent-3">
-                                 <img src="img/pro2.jpg" class="card-img" alt="...">
+                                 <img src="img/products/beach.jpg" class="card-img packages-image" alt="...">
                                  <div class="card-img-overlay">
-                                    <h5 class="card-title">Beach vacations</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum magnam reprehenderit rerum incidunt corporis!</p>
+                                    <h5 class="card-title text-white">Beach vacations</h5>
+                                    <p class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum magnam reprehenderit rerum incidunt corporis!</p>
                                     <p class="card-text text-accent">22% OFF</p>
                                     <a href="#" class="btn btn-sm btn-accent"><i class="icofont-phone"></i> Call our experts now</a>
                                  </div>
@@ -1377,11 +1436,11 @@
                         <div class="col-md-3 col-6">
                            <div class="products-box">
                               <div class="card text-white border-accent-3">
-                                 <img src="img/pro2.jpg" class="card-img" alt="...">
+                                 <img src="img/products/group.jpg" class="card-img packages-image" alt="...">
                                  <div class="card-img-overlay">
                                     <h5 class="card-title">Group tours</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum magnam reprehenderit rerum incidunt corporis!</p>
-                                    <p class="card-text text-accent">22% OFF</p>
+                                    <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum magnam reprehenderit rerum incidunt corporis!</p>
+                                    <p class="card-text text-white">22% OFF</p>
                                     <a href="#" class="btn btn-sm btn-accent"><i class="icofont-phone"></i> Call our experts now</a>
                                  </div>
                               </div>
@@ -1403,7 +1462,7 @@
                         <div class="col-md-3 col-6">
                            <div class="products-box">
                               <div class="card text-white border-accent-3">
-                                 <img src="img/pro2.jpg" class="card-img" alt="...">
+                                 <img src="img/products/relax.jpg" class="card-img packages-image" alt="...">
                                  <div class="card-img-overlay">
                                     <h5 class="card-title">Book now pay later</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, natus!</p>
@@ -1514,7 +1573,7 @@
                                        <!-- title -->
                                        <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                        <!-- location -->
-                                       <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                       <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                        <!-- pricing -->
                                        <div class="d-flex justify-content-between mb-2">
                                           <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -1565,7 +1624,7 @@
                                        <!-- title -->
                                        <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                        <!-- location -->
-                                       <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                       <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                        <!-- pricing -->
                                        <div class="d-flex justify-content-between mb-2">
                                           <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -1616,7 +1675,7 @@
                                        <!-- title -->
                                        <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                        <!-- location -->
-                                       <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N)</p>
+                                       <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N)</p>
                                        <!-- pricing -->
                                        <div class="d-flex justify-content-between mb-2">
                                           <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -1667,7 +1726,7 @@
                                        <!-- title -->
                                        <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                        <!-- location -->
-                                       <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                       <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                        <!-- pricing -->
                                        <div class="d-flex justify-content-between mb-2">
                                           <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -1718,7 +1777,7 @@
                                        <!-- title -->
                                        <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                        <!-- location -->
-                                       <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                       <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                        <!-- pricing -->
                                        <div class="d-flex justify-content-between mb-2">
                                           <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -1785,7 +1844,7 @@
                                        <!-- title -->
                                        <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                        <!-- location -->
-                                       <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                       <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                        <!-- pricing -->
                                        <div class="d-flex justify-content-between mb-2">
                                           <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -1836,7 +1895,7 @@
                                        <!-- title -->
                                        <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                        <!-- location -->
-                                       <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                       <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                        <!-- pricing -->
                                        <div class="d-flex justify-content-between mb-2">
                                           <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -1887,7 +1946,7 @@
                                        <!-- title -->
                                        <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                        <!-- location -->
-                                       <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N)</p>
+                                       <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N)</p>
                                        <!-- pricing -->
                                        <div class="d-flex justify-content-between mb-2">
                                           <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -1938,7 +1997,7 @@
                                        <!-- title -->
                                        <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                        <!-- location -->
-                                       <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                       <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                        <!-- pricing -->
                                        <div class="d-flex justify-content-between mb-2">
                                           <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
@@ -1989,7 +2048,7 @@
                                        <!-- title -->
                                        <h6 class="mb-1"><a href="#">Exotic andaman</a></h6>
                                        <!-- location -->
-                                       <p class="text-gray mb-2">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
+                                       <p class="text-gray mb-2 single-line" data-toggle="tooltip" title="Port Blair (3N) • Havelock (2N) • Neil (1N)">Port Blair (3N) • Havelock (2N) • Neil (1N)</p>
                                        <!-- pricing -->
                                        <div class="d-flex justify-content-between mb-2">
                                           <p class="mrp mb-0"><i class="fa fa-inr"></i> 1,84,999</p>
