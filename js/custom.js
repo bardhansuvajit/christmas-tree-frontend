@@ -1,46 +1,40 @@
-/*
-Template Name: Osahan Eat - Online Food Ordering Website HTML Template
-Author: Askbootstrap
-Author URI: https://themeforest.net/user/askbootstrap
-Version: 1.0
-*/
-(function($) {
+(function ($) {
   "use strict"; // Start of use strict
 
-// ===========Select2============
-$('select').select2();
+  // ===========Select2============
+  $('select').select2();
 
-// ===========My Account Tabs============
-$(window).on('hashchange', function() {
+  // ===========My Account Tabs============
+  $(window).on('hashchange', function () {
     var url = document.location.toString();
     if (url.match('#')) {
+      //$('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
+      $('a[href="' + window.location.hash + '"]').trigger('click');
+    }
+    $('.nav-tabs a').on('shown', function (e) {
+      window.location.hash = e.target.hash;
+    })
+  });
+  var url = document.location.toString();
+  if (url.match('#')) {
     //$('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
     $('a[href="' + window.location.hash + '"]').trigger('click');
-    } 
-   $('.nav-tabs a').on('shown', function (e) {
+  }
+  // Change hash for page-reload
+  $('.nav-tabs a').on('shown', function (e) {
     window.location.hash = e.target.hash;
-   })
-});
-var url = document.location.toString();
-if (url.match('#')) {
-    //$('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
-    $('a[href="' + window.location.hash + '"]').trigger('click');
-} 
-// Change hash for page-reload
-$('.nav-tabs a').on('shown', function (e) {
-    window.location.hash = e.target.hash;
-})
+  })
 
-// Category Owl Carousel
+  // Category Owl Carousel
   const objowlcarousel = $('.owl-carousel-category');
   if (objowlcarousel.length > 0) {
     objowlcarousel.owlCarousel({
       responsive: {
-        0:{
-            items:2,
+        0: {
+          items: 2,
         },
-        600:{
-            items:2,
+        600: {
+          items: 2,
         },
         1000: {
           items: 4,
@@ -57,20 +51,20 @@ $('.nav-tabs a').on('shown', function (e) {
       autoplayTimeout: 2000,
       autoplayHoverPause: true,
       nav: true,
-      navText:["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
     });
   }
 
-  // homepage activities
+  // Homepage activities
   const actowlcarousel = $('.owl-carousel-activities');
   if (actowlcarousel.length > 0) {
     actowlcarousel.owlCarousel({
       responsive: {
-        0:{
-            items:2,
+        0: {
+          items: 2,
         },
-        600:{
-            items:2,
+        600: {
+          items: 2,
         },
         1000: {
           items: 4,
@@ -87,20 +81,20 @@ $('.nav-tabs a').on('shown', function (e) {
       autoplayTimeout: 2000,
       autoplayHoverPause: true,
       nav: true,
-      navText:["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
     });
   }
-  
-// Homepage Owl Carousel  
-var fiveobjowlcarousel = $(".owl-carousel-four");
+
+  // Homepage Owl Carousel  
+  var fiveobjowlcarousel = $(".owl-carousel-four");
   if (fiveobjowlcarousel.length > 0) {
-     fiveobjowlcarousel.owlCarousel({
-        responsive: {
-        0:{
-            items:1,
+    fiveobjowlcarousel.owlCarousel({
+      responsive: {
+        0: {
+          items: 1,
         },
-        600:{
-            items:2,
+        600: {
+          items: 2,
         },
         1000: {
           items: 4,
@@ -110,27 +104,57 @@ var fiveobjowlcarousel = $(".owl-carousel-four");
         },
       },
 
-        lazyLoad: true,
-        pagination: false,
-        loop: true,
-        dots: false,
-        autoPlay: 2000,
-        nav: true,
-        stopOnHover: true,
-        navText: ["<i class='icofont-thin-left'></i>", "<i class='icofont-thin-right'></i>"]
+      lazyLoad: true,
+      pagination: false,
+      loop: true,
+      dots: false,
+      autoPlay: 2000,
+      nav: true,
+      stopOnHover: true,
+      navText: ["<i class='icofont-thin-left'></i>", "<i class='icofont-thin-right'></i>"]
     });
-}
+  }
 
-// Owl Carousel Five
-var fiveobjowlcarousel = $(".owl-carousel-five");
-  if (fiveobjowlcarousel.length > 0) {
-     fiveobjowlcarousel.owlCarousel({
+  // Homepage Tea tourism
+  const objowlcarouselTea = $('.owl-carousel-tea');
+  if (objowlcarouselTea.length > 0) {
+    objowlcarouselTea.owlCarousel({
       responsive: {
-        0:{
-            items:2,
+        0: {
+          items: 1,
         },
-        600:{
-            items:3,
+        600: {
+          items: 1,
+        },
+        1000: {
+          items: 1,
+        },
+        1200: {
+          items: 1,
+        },
+      },
+      loop: true,
+      lazyLoad: true,
+      autoplay: false,
+      dots: false,
+      autoplaySpeed: 1000,
+      autoplayTimeout: 3500,
+      autoplayHoverPause: true,
+      nav: true,
+      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+    });
+  }
+
+  // Owl Carousel Five
+  var fiveobjowlcarousel = $(".owl-carousel-five");
+  if (fiveobjowlcarousel.length > 0) {
+    fiveobjowlcarousel.owlCarousel({
+      responsive: {
+        0: {
+          items: 2,
+        },
+        600: {
+          items: 3,
         },
         1000: {
           items: 4,
@@ -139,27 +163,27 @@ var fiveobjowlcarousel = $(".owl-carousel-five");
           items: 5,
         },
       },
-        lazyLoad: true,
-        pagination: false,
-        loop: true,
-        dots: false,
-        autoPlay: 2000,
-        nav: true,
-        stopOnHover: true,
-        navText: ["<i class='icofont-thin-left'></i>", "<i class='icofont-thin-right'></i>"]
+      lazyLoad: true,
+      pagination: false,
+      loop: true,
+      dots: false,
+      autoPlay: 2000,
+      nav: true,
+      stopOnHover: true,
+      navText: ["<i class='icofont-thin-left'></i>", "<i class='icofont-thin-right'></i>"]
     });
-}
+  }
 
-// Homepage Ad Owl Carousel
+  // Homepage Ad Owl Carousel
   const mainslider = $('.homepage-ad');
   if (mainslider.length > 0) {
     mainslider.owlCarousel({
       responsive: {
-        0:{
-            items:2,
+        0: {
+          items: 2,
         },
-        764:{
-            items:2,
+        764: {
+          items: 2,
         },
         765: {
           items: 1,
@@ -175,21 +199,21 @@ var fiveobjowlcarousel = $(".owl-carousel-five");
       dots: false,
       autoplayTimeout: 2000,
       nav: true,
-      navText:["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
       autoplayHoverPause: true,
     });
-}
+  }
 
-// Homepage destination Owl Carousel
+  // Homepage destination Owl Carousel
   const destslider = $('.homepage-dest');
   if (destslider.length > 0) {
     destslider.owlCarousel({
       responsive: {
-        0:{
-            items:1,
+        0: {
+          items: 1,
         },
-        764:{
-            items:1,
+        764: {
+          items: 1,
         },
         765: {
           items: 1,
@@ -205,10 +229,10 @@ var fiveobjowlcarousel = $(".owl-carousel-five");
       dots: false,
       autoplayTimeout: 3500,
       nav: true,
-      navText:["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
       autoplayHoverPause: true,
     });
-}
+  }
 
   // Tooltip
   $('[data-toggle="tooltip"]').tooltip();

@@ -77,6 +77,9 @@ a:hover, .btn-link:hover {
 
 
 /* Homepage */
+.homepage-search-title h5 {
+    margin-bottom: 3rem;
+}
 .homepage-search-block {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -159,6 +162,7 @@ a:hover, .btn-link:hover {
     position: relative;
     box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
     border: 2px solid #fff;
+    z-index: 99;
 }
 .heading-circle p {
     position: absolute;
@@ -180,7 +184,7 @@ a:hover, .btn-link:hover {
     transition: all 0.3s ease;
 }
 .best-packages-single .list-card {
-    height: 290px;
+    height: 270px;
     overflow: hidden;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
     transition: all 0.3s ease;
@@ -214,10 +218,25 @@ a:hover, .btn-link:hover {
     height: 80px;
     border-radius: 0;
 }
+.tea-tourism-item {
+    width: 100%;
+    display: inline-block;
+    height: 204px;
+    background: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+.tea-tourism-item img {
+    width: 100%;
+    object-fit: cover;
+    height: inherit;
+}
+
+
 
 /* Packages */
 .best-packages-single.packages-page {
-    height: 290px;
+    height: 265px;
 }
 /* Functional styling;
 * These styles are required for noUiSlider to function.
@@ -471,6 +490,9 @@ a:hover, .btn-link:hover {
 
 /* responsive only */
 @media only screen and (max-width: 640px) {
+    h1 {
+        font-size: 20px;
+    }
     h2 {
         font-size: 16px;
     }
@@ -498,8 +520,25 @@ a:hover, .btn-link:hover {
     .card-img-overlay {
         padding: 0.5rem;
     }
+    .homepage-search-title {
+        margin-top: 1rem;
+    }
+    .homepage-search-title h5 {
+        margin-bottom: 1rem;
+    }
     .homepage-add-section {
         padding: 0;
+    }
+    .packages-image {
+        height: 172px;
+    }
+    /* .section-header h2 {
+        position: relative;
+        left: -30px;
+    } */
+    .heading-circle {
+        position: absolute;
+        left: -25px;
     }
     .homepage-search-block {
         padding: 0 !important;
